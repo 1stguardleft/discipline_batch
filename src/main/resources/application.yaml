@@ -1,0 +1,13 @@
+spring:
+    datasource:
+        driver-class-name: org.mariadb.jdbc.Driver
+        url: jdbc:mariadb://localhost:3306/discipline?allowPublicKeyRetrieval=true&useSSL=false
+        username: dbadmin
+        password: keepthediscipline
+
+    batch:
+        jdbc:
+            schema: classpath:org/springframework/batch/core/schema-mysql.sql
+            initialize-schema: always
+        job:
+            enabled: true
