@@ -17,6 +17,11 @@ repositories {
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter'
+	implementation 'org.springframework.boot:spring-boot-starter-batch'
+	implementation 'org.springframework.boot:spring-boot-starter-quartz'
+	implementation 'mysql:mysql-connector-java:8.0.32'
+	implementation 'org.flywaydb:flyway-core'
+    implementation 'org.flywaydb:flyway-mysql'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
